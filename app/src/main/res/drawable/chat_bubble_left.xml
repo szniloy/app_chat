@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Background drawable for the chat bubble -->
+    <item>
+        <shape
+            android:shape="rectangle">
+            <solid android:color="#e0e0e0"/> <!-- Bubble color -->
+            <corners android:radius="16dp"/> <!-- Rounded corners -->
+            <padding
+                android:left="10dp"
+                android:right="10dp"
+                android:top="10dp"
+                android:bottom="10dp"/> <!-- Padding inside the bubble -->
+        </shape>
+    </item>
+
+    <!-- Triangle pointer to point to the sender -->
+    <item android:bottom="0dp" android:right="-16dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#e0e0e0"/> <!-- Same color as bubble -->
+            <corners android:radius="16dp"/>
+            <size android:width="16dp" android:height="16dp"/>
+            <padding android:left="16dp"/>
+            <corners android:radius="0dp"/>
+        </shape>
+        <shape android:shape="rectangle">
+            <size android:width="0dp" android:height="0dp"/>
+            <solid android:color="#e0e0e0"/>
+            <corners android:radius="0dp"/>
+            <padding android:bottom="0dp" android:left="16dp"/>
+        </shape>
+    </item>
+</selector>
